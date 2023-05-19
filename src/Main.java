@@ -14,7 +14,8 @@ public class Main {
 
     private static void showStudentStatistics() {
 
-        String fileName = "F:\\MARWAN FCAI\\4th Year\\8th SEMESTER\\Cloud Computing\\Tasks\\Assignment2\\Database\\Main-DB.txt";
+        String fileName = "/app/data/Main-DB.txt";
+
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
@@ -46,7 +47,7 @@ public class Main {
     }
 
     private static void showFilesStatistics() {
-        String folderPath = "F:\\MARWAN FCAI\\4th Year\\8th SEMESTER\\Cloud Computing\\Tasks\\Assignment2\\Database\\Batch Files";
+        String folderPath = "/app/data/batch";
         File folder = new File(folderPath);
         File[] files = folder.listFiles();
         int verifiedCount = 0;
