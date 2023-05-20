@@ -33,9 +33,9 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t admin-view .
+          docker build -t admin-view:latest ../../
 
       - name: Push Docker Image
         run: |
-          docker tag admin-view ${{env.DOCKER_USERNAME}}/admin-view:latest
+          docker tag admin-view:latest ${{env.DOCKER_USERNAME}}/admin-view:latest
           docker push ${{env.DOCKER_USERNAME}}/admin-view:latest
