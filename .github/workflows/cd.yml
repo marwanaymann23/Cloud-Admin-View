@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DOCKER_USERNAME: "marwanaymann"
+  DOCKER_USERNAME: "marwannayman"
   DOCKER_PASSWORD: "dckr_pat_PgAmz85dZJUI0Df1ZGimhNVRxqs"
 
 jobs:
