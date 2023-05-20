@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v2
+        with:
+          java-version: 1.8
+
+      - name: Build and test
+        run: |
+          docker build -t admin-view .
+          docker run -v "F:\MARWAN FCAI\4th Year\8th SEMESTER\Cloud Computing\Tasks\Assignment2\StudentRegister\Main-DB.txt:/app/data/Main-DB.txt" -v "F:\MARWAN FCAI\4th Year\8th SEMESTER\Cloud Computing\Tasks\Assignment2\StudentRegister\batch:/app/data/batch" admin-view
