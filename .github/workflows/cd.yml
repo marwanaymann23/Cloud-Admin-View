@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t admin-view:latest ../../
+          docker build -t admin-view:latest ../../Dockerfile
 
       - name: Push Docker Image
         run: |
