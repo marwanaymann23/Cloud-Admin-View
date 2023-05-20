@@ -7,6 +7,7 @@ services:
     volumes:
       - ../StudentRegister/batch/:/app/data/batch
       - ../StudentRegister/Main-DB.txt:/app/data/Main-DB.txt
+    stdin_open: true
     tty: true
 
   admin-view:
@@ -18,5 +19,4 @@ services:
       - ../StudentRegister/Main-DB.txt:/app/data/Main-DB.txt
     depends_on:
       - student-register
-    links:
-      - student-register
+
