@@ -17,5 +17,5 @@ RUN javac Main.java
 
 # Build the Docker image:
 # docker build -t admin-view .
-# docker run -v $PWD/Main-DB.txt:/app/data/Main-DB.txt -v $PWD/batch:/app/data/batch admin-view
+#  docker run -v "F:\MARWAN FCAI\4th Year\8th SEMESTER\Cloud Computing\Tasks\Assignment2\StudentRegister\Main-DB.txt:/app/data/Main-DB.txt" -v "F:\MARWAN FCAI\4th Year\8th SEMESTER\Cloud Computing\Tasks\Assignment2\StudentRegister\batch:/app/data/batch" admin-view
 

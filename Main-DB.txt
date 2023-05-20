@@ -1,6 +1,0 @@
-Ahmed;1;AI,Math
-Mohemed;2;AI,Prog
-Marwan;3;Math,Prog
-Youssef;4;Prog
-Ibrahim;5;AI,Math
-Mustafa;6;AI,Prog
