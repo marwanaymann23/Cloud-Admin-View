@@ -19,3 +19,7 @@ RUN javac Main.java
 # docker build -t admin-view .
 #  docker run -v "F:\MARWAN FCAI\4th Year\8th SEMESTER\Cloud Computing\Tasks\Assignment2\StudentRegister\Main-DB.txt:/app/data/Main-DB.txt" -v "F:\MARWAN FCAI\4th Year\8th SEMESTER\Cloud Computing\Tasks\Assignment2\StudentRegister\batch:/app/data/batch" admin-view
 
+# For Docker compose run
+#  docker-compose run --rm student-register
+#  docker-compose run --rm admin-view
+# docker-compose up

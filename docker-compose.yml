@@ -1,0 +1,22 @@
+version: '3'
+services:
+  student-register:
+    build:
+      context: ../StudentRegister
+      dockerfile: Dockerfile
+    volumes:
+      - ../StudentRegister/batch/:/app/data/batch
+      - ../StudentRegister/Main-DB.txt:/app/data/Main-DB.txt
+    tty: true
+
+  admin-view:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../StudentRegister/batch:/app/data/batch
+      - ../StudentRegister/Main-DB.txt:/app/data/Main-DB.txt
+    depends_on:
+      - student-register
+    links:
+      - student-register
