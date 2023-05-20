@@ -10,6 +10,7 @@ services:
     stdin_open: true
     tty: true
 
+
   admin-view:
     build:
       context: .
